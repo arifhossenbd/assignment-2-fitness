@@ -64,8 +64,10 @@
 
     --border-color: rgb(255, 255, 255);
     --transition: all 0.3s linear;
+    --fourth-gap:5rem;
     --fifth-gap: 2rem;
     --sixth-gap: 1rem;
+    --seventh-gap: .5rem;
 }
 
 body {
@@ -111,7 +113,7 @@ main {
 .title {
     font-size: var(--third-font-size);
     font-weight: var(--second-font-weight);
-    margin-bottom: var(--first-margin-bottom);
+    text-align: center;
 }
 
 .description {
@@ -119,6 +121,20 @@ main {
     font-weight: var(--fifth-font-weight);
     color: var(--second-text-color);
     margin-bottom: var(--fifth-margin-bottom);
+}
+
+.section__description {
+    font-size: var(--sixth-font-size);
+    font-weight: var(--fifth-font-weight);
+    color: var(--second-text-color);
+    text-align: center;
+    margin-bottom: var(--fifth-margin-bottom);
+    width: 50%;
+    margin: 0 auto;
+}
+
+.section__gap{
+    margin-top: var(--fourth-gap);
 }
 
 /* ======== Basic CSS Ends Here ======== */
@@ -287,7 +303,30 @@ nav ul li a:hover {
 /* ======== Header Section Ends Here ======== */
 
 /* ======== Change Your Habit Section Starts Here ======== */
+.change__your__habit__card__box{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: space-between;
+    gap: var(--sixth-gap);
+    align-items: center;
+    margin-top: var(--fourth-gap);
+}
 
+.change__your__habit__card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: var(--sixth-gap);
+}
+.change__your__habit__card__img{
+    border: .1px solid var(--border-color);
+    border-radius: 100%;
+}
+.change__your__habit__card__contents h3{
+    margin-bottom: var(--seventh-margin-bottom);
+}
 /* ======== Change Your Habit Section Ends Here ======== */
 
 /* ======== Basic Section Starts Here ======== */
