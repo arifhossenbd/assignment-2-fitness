@@ -1,0 +1,315 @@
+/* ======== Basic CSS Starts Here ======== */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mea+Culpa&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    font-family: 'Inter', sans-serif;
+    color: white;
+}
+
+:root {
+    /* ========= Background Color =========; */
+    --first-bg-color: black;
+    --second-bg-color: rgb(230, 83, 60);
+    --third-bg-color: rgba(255, 255, 255, 0.1);
+    /* ========= Text Color =========; */
+    --first-text-color: rgb(255, 255, 255);
+    --second-text-color: rgba(255, 255, 255, 0.5);
+    --third-text-color: rgb(230, 83, 60);
+    /* ========= Font Size =========; */
+    --first-font-size: 4.8rem;
+    --second-font-size: 3.8rem;
+    --third-font-size: 3rem;
+    --fourth-font-size: 2rem;
+    --fifth-font-size: 1.4rem;
+    --sixth-font-size: 1rem;
+    --seventh-font-size: .8rem;
+    /* ========= Font Weight =========; */
+    --first-font-weight: 800;
+    --second-font-weight: 700;
+    --third-font-weight: 600;
+    --fourth-font-weight: 500;
+    --fifth-font-weight: 400;
+    /* ========= Padding =========; */
+    --first-padding: 1.6rem 2.4rem;
+    --second-padding: 1rem 2rem;
+    --third-padding: .8rem 1.6rem;
+    --fourth-padding: .6rem 1.4rem;
+    --fifth-padding: .4rem 1.2rem;
+    --sixth-padding: 5px;
+    /* ========= Margin =========; */
+    --first-margin: 1.6rem 2.4rem;
+    --second-margin: 1.2rem 2rem;
+    --third-margin: .8rem 1.6rem;
+    --fourth-margin: .6rem 1.4rem;
+    --fifth-margin: .4rem 1.2rem;
+    --first-margin-bottom: 5.6rem;
+    --second-margin-bottom: 4.6rem;
+    --third-margin-bottom: 3.6rem;
+    --fourth-margin-bottom: 2.6rem;
+    --fifth-margin-bottom: 1.6rem;
+    --sixth-margin-bottom: 1.5rem;
+    --seventh-margin-bottom: .3rem;
+    /* ========= Border Radius =========; */
+    --first-border-radius: 2.6rem;
+    --second-border-radius: .5rem;
+    --third-border-radius: 1rem;
+
+    --border-color: rgb(255, 255, 255);
+    --transition: all 0.3s linear;
+    --fifth-gap: 2rem;
+    --sixth-gap: 1rem;
+}
+
+body {
+    background-color: var(--first-bg-color);
+    color: var(--text-color);
+}
+
+main {
+    margin: 0 10rem;
+}
+
+.primary__btn {
+    padding: var(--second-padding);
+    background-color: var(--second-bg-color);
+    color: var(--first-text-color);
+    border-radius: var(--first-border-radius);
+    font-size: var(--fifth-font-size);
+    font-weight: var(--third-font-weight);
+    transition: var(--transition);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.primary__btn:hover {
+    background-color: transparent;
+    color: var(--first-text-color);
+    border: 1px solid var(--border-color);
+}
+
+.transparent__btn {
+    background-color: transparent;
+    color: var(--first-text-color);
+    border: 1px solid var(--border-color);
+}
+
+
+.transparent__btn:hover {
+    background-color: var(--second-bg-color);
+    color: var(--first-text-color);
+    border: none;
+}
+
+.title {
+    font-size: var(--third-font-size);
+    font-weight: var(--second-font-weight);
+    margin-bottom: var(--first-margin-bottom);
+}
+
+.description {
+    font-size: var(--sixth-font-size);
+    font-weight: var(--fifth-font-weight);
+    color: var(--second-text-color);
+    margin-bottom: var(--fifth-margin-bottom);
+}
+
+/* ======== Basic CSS Ends Here ======== */
+
+/* ======== Header Section Starts Here ======== */
+
+header {
+    background: linear-gradient(180.00deg, rgb(17, 17, 17), rgba(119, 119, 119, 0) 100%);
+    padding: 1rem 10rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--sixth-padding) 0;
+    margin-bottom: var(--margin-bottom);
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: var(--fifth-gap);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: var(--first-border-radius);
+    font-size: var(--sixth-font-size);
+    font-weight: var(--fourth-font-weight);
+    transition: var(--transition);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: var(--transition);
+    padding: var(--sixth-padding);
+    padding-right: 1rem;
+}
+
+nav ul li a:hover {
+    color: var(--second-text-color);
+    text-decoration: none;
+}
+
+.home {
+    background-color: var(--second-bg-color);
+    color: var(--first-text-color);
+    padding: var(--fifth-padding);
+    border-radius: var(--first-border-radius);
+}
+
+.logo {
+    color: var(--third-text-color);
+    font-size: var(--fourth-font-size);
+    font-weight: var(--first-font-weight);
+    font-style: italic;
+}
+
+.banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--fifth-gap);
+}
+
+.banner__contents {
+    width: 50%;
+}
+
+.banner__title{
+    font-size: var(--first-font-size);
+    font-weight: 900;
+    line-height: 100%;
+    margin-bottom: var(--fourth-margin-bottom);
+}
+.banner__shape{
+    font-family: "Mea Culpa", cursive;
+    font-size: 10rem;
+    font-weight: 100;
+    font-style: italic;
+    line-height:40%;
+}
+
+.banner__desc{
+    font-size: var(--third-font-size);
+    font-weight: var(--second-font-weight);
+    color: var(--third-text-color);
+    margin-bottom: var(--fourth-margin-bottom);
+}
+
+.btn__container{
+    display: flex;
+    align-items: center;
+    gap: var(--sixth-gap);
+}
+
+.banner__img {
+    width: 50%;
+    height: 520px;
+    background-image: url(images/banner.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 10rem 0;
+    color: white;
+    position: relative;
+    margin-top: var(--sixth-gap);
+}
+
+.banner__top__card{
+    position: absolute;
+    top: 28%;
+    left: 60%;
+    transform: translateX(-50% -50%);
+}
+
+.banner__bottom__card{
+    position: absolute;
+    bottom: 12%;
+    left: 5%;
+    transform: translateX(-50% -50%);
+}
+
+.banner__card {
+    width: fit-content;
+    box-sizing: border-box;
+    border: 0.70px solid rgba(255, 255, 255, 0.1);
+    border-radius: 9.07px;
+    backdrop-filter: blur(5px);
+    background: rgba(48, 48, 48, 0.54);
+    padding: var(--fifth-padding);
+}
+
+.banner__card__title{
+    font-size: var(--fifth-font-size);
+    font-weight: var(--second-font-weight);
+    margin-bottom: var(--seventh-margin-bottom);
+}
+
+.banner__card__desc{
+    font-size: var(--seventh-font-size);
+    font-weight: var(--fifth-font-weight);
+    color: var(--second-text-color);
+}
+
+.play__btn {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    background-color: var(--second-bg-color);
+    border-radius: 100%;
+}
+
+.triangle {
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-bottom: 10px solid white;
+    position: absolute;
+    top: 50%;
+    left: 54%;
+    transform: translate(-50%, -50%) rotate(90deg);
+}
+
+.play__icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--sixth-font-size);
+    gap: var(--sixth-gap);
+}
+/* ======== Header Section Ends Here ======== */
+
+/* ======== Change Your Habit Section Starts Here ======== */
+
+/* ======== Change Your Habit Section Ends Here ======== */
+
+/* ======== Basic Section Starts Here ======== */
+/* ======== Basic Section Ends Here ======== */
+
+/* ======== Basic Section Starts Here ======== */
+/* ======== Basic Section Ends Here ======== */
+
+/* ======== Basic Section Starts Here ======== */
+/* ======== Basic Section Ends Here ======== */
+
+/* ======== Basic Section Starts Here ======== */
+/* ======== Basic Section Ends Here ======== */
+
+/* ======== Basic Section Starts Here ======== */
+/* ======== Basic Section Ends Here ======== */
+
+/* ======== Basic Section Starts Here ======== */
+/* ======== Basic Section Ends Here ======== */
+
+/* ======== Basic Section Starts Here ======== */
+/* ======== Basic Section Ends Here ======== */
+
+/* ======== Basic Section Starts Here ======== */
+/* ======== Basic Section Ends Here ======== */
