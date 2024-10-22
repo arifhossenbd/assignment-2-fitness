@@ -28,7 +28,7 @@
     --second-font-size: 3.8rem;
     --third-font-size: 3rem;
     --fourth-font-size: 2rem;
-    --fifth-font-size: 1.4rem;
+    --fifth-font-size: 1.6rem;
     --sixth-font-size: 1rem;
     --seventh-font-size: .8rem;
     /* ========= Font Weight =========; */
@@ -37,6 +37,7 @@
     --third-font-weight: 600;
     --fourth-font-weight: 500;
     --fifth-font-weight: 400;
+    --sixth-font-weight: 300;
     /* ========= Padding =========; */
     --first-padding: 1.6rem 2.4rem;
     --second-padding: 1rem 2rem;
@@ -56,18 +57,19 @@
     --fourth-margin-bottom: 2.6rem;
     --fifth-margin-bottom: 1.6rem;
     --sixth-margin-bottom: 1.5rem;
-    --seventh-margin-bottom: .3rem;
+    --seventh-margin-bottom: .7rem;
     /* ========= Border Radius =========; */
     --first-border-radius: 2.6rem;
     --second-border-radius: .5rem;
     --third-border-radius: 1rem;
 
     --border-color: rgb(255, 255, 255);
+    --second-border-color: rgba(255, 255, 255, 0.1);
     --transition: all 0.3s linear;
     --fourth-gap: 5rem;
     --fifth-gap: 2rem;
     --sixth-gap: 1rem;
-    --seventh-gap: .5rem;
+    --seventh-gap: .6rem;
 }
 
 body {
@@ -75,16 +77,12 @@ body {
     color: var(--text-color);
 }
 
-main {
-    margin: 0 10rem;
-}
-
 .primary__btn {
     padding: var(--second-padding);
     background-color: var(--second-bg-color);
     color: var(--first-text-color);
     border-radius: var(--first-border-radius);
-    font-size: var(--fifth-font-size);
+    font-size: var(--sixth-font-size);
     font-weight: var(--third-font-weight);
     transition: var(--transition);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -132,6 +130,10 @@ main {
 
 .section__gap {
     margin-top: var(--fourth-gap);
+}
+
+.section__margin {
+    margin: 0 10rem;
 }
 
 /* ======== Basic CSS Ends Here ======== */
@@ -352,19 +354,105 @@ nav ul li a:hover {
     margin-bottom: var(--fifth-margin-bottom);
 }
 
-.run__an__extra__mile__easily__img{
+.run__an__extra__mile__easily__img {
     width: 50%;
 }
-.run__an__extra__mile__easily__img img{
+
+.run__an__extra__mile__easily__img img {
     width: 100%;
     height: auto;
     object-fit: cover;
     border-radius: var(--third-border-radius);
 }
+
 /* ========  Run an Extra Mile Easily Section Ends Here ======== */
 
-/* ======== Basic Section Starts Here ======== */
-/* ======== Basic Section Ends Here ======== */
+/* ======== BMI Calculator Section Starts Here ======== */
+.bmi__calculator__section {
+    background: rgb(34, 34, 34);
+    padding: 3rem 10rem;
+}
+
+.bmi__calculator {
+    width: 70%;
+    margin: auto;
+}
+
+.bmi__calculator__contents {
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.bmi__calculator__title {
+    text-align: start;
+}
+
+.bmi__calculator__chart {
+    width: 50%;
+}
+
+table {
+    width: max-content;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px solid var(--second-border-color);
+    padding: 10px;
+    color: var(--second-text-color);
+    font-weight: var(--sixth-font-weight);
+}
+
+th {
+    color: white;
+    font-weight: var(--fourth-font-weight);
+    text-align: start;
+}
+
+.bmi__calculator__contents__title {
+    margin-bottom: var(--fifth-margin-bottom);
+    font-size: var(--fifth-font-size);
+    font-weight: var(--second-font-weight);
+}
+
+.bmi__calculator__form {
+    width: 50%;
+}
+
+.form__item input,
+select {
+    border: none !important;
+    padding: 10px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+option {
+    background-color: #333333; 
+    padding: 5px;
+  }
+
+.form__item {
+    display: flex;
+    gap: var(--seventh-gap);
+    margin-bottom: var(--seventh-margin-bottom);
+}
+
+.form__select {
+    width: 39%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid var(--border-color);
+}
+.activity__factor{
+    width: 80%;
+    margin-bottom: var(--sixth-margin-bottom);
+}
+
+/* ======== BMI Calculator Section Ends Here ======== */
 
 /* ======== Basic Section Starts Here ======== */
 /* ======== Basic Section Ends Here ======== */
