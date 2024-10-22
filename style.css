@@ -463,9 +463,10 @@ option {
     justify-content: space-between;
 } */
 
-.meet__our__team__container{
+.meet__our__team__container {
     margin-top: var(--fourth-margin-bottom);
 }
+
 .meet__our__team__card__box {
     border-radius: 18px;
     background: rgb(34, 34, 34);
@@ -475,11 +476,11 @@ option {
     gap: var(--fifth-gap);
 }
 
-.meet__our__team__card{
+.meet__our__team__card {
     position: relative;
 }
 
-.trainer__info{
+.trainer__info {
     position: absolute;
     bottom: 0;
     left: 5%;
@@ -490,18 +491,77 @@ option {
     font-size: var(--sixth-font-size);
     transition: var(--transition);
 }
+
 .meet__our__team__card img {
     width: 100%;
     object-fit: fill;
-    height: 260px;
+    height: 250px;
     border-radius: var(--third-border-radius);
     filter: opacity(70%);
 }
 
 /* ======== Meet Our Team Section Ends Here ======== */
 
-/* ======== Basic Section Starts Here ======== */
-/* ======== Basic Section Ends Here ======== */
+/* ======== Footer Section Starts Here ======== */
+footer {
+    background: rgb(34, 34, 34);
+    padding: var(--fifth-gap) 10rem;
+}
+
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+    gap: var(--fourth-gap);
+}
+
+.footer__contents-1 {
+    width: 40%;
+}
+
+.footer__title {
+    font-size: var(--first-font-size);
+    font-weight: var(--first-font-weight);
+    margin-bottom: var(--fifth-margin-bottom);
+    font-style: italic;
+    color: var(--third-text-color)
+}
+
+.footer__subtitle {
+    font-size: var(--fourth-font-size);
+    font-weight: var(--second-font-weight);
+    margin-bottom: var(--sixth-margin-bottom);
+}
+.footer__links{
+    display: flex;
+    flex-direction: column;
+    gap: var(--sixth-gap);
+}
+.footer__links li, a {
+    color: var(--second-text-color);
+    font-weight: 200;
+}
+
+.footer__hr{
+    width: 100%;
+    height: 1px;
+    background: var(--second-text-color);
+    margin-top: var(--third-margin-bottom);
+}
+
+.footer__copyright{
+    margin-top: var(--sixth-margin-bottom);
+    color: rgba(255, 255, 255, 0.1);
+    font-size: var(--sixth-font-size);
+    font-weight: var(--second-font-weight);
+}
+
+.footer__copyright p {
+    font-size: var(--sixth-font-size);
+    font-weight: 200;
+    color: var(--second-text-color);
+    text-align: center;
+}
+/* ======== Footer Section Ends Here ======== */
 
 /* ======== Basic Section Starts Here ======== */
 /* ======== Basic Section Ends Here ======== */
