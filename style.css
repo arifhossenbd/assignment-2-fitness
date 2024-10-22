@@ -64,7 +64,7 @@
 
     --border-color: rgb(255, 255, 255);
     --transition: all 0.3s linear;
-    --fourth-gap:5rem;
+    --fourth-gap: 5rem;
     --fifth-gap: 2rem;
     --sixth-gap: 1rem;
     --seventh-gap: .5rem;
@@ -124,16 +124,13 @@ main {
 }
 
 .section__description {
-    font-size: var(--sixth-font-size);
-    font-weight: var(--fifth-font-weight);
-    color: var(--second-text-color);
     text-align: center;
-    margin-bottom: var(--fifth-margin-bottom);
+    padding-top: var(--sixth-gap);
     width: 50%;
     margin: 0 auto;
 }
 
-.section__gap{
+.section__gap {
     margin-top: var(--fourth-gap);
 }
 
@@ -199,28 +196,29 @@ nav ul li a:hover {
     width: 50%;
 }
 
-.banner__title{
+.banner__title {
     font-size: var(--first-font-size);
     font-weight: 900;
     line-height: 100%;
     margin-bottom: var(--fourth-margin-bottom);
 }
-.banner__shape{
+
+.banner__shape {
     font-family: "Mea Culpa", cursive;
     font-size: 10rem;
     font-weight: 100;
     font-style: italic;
-    line-height:40%;
+    line-height: 40%;
 }
 
-.banner__desc{
+.banner__desc {
     font-size: var(--third-font-size);
     font-weight: var(--second-font-weight);
     color: var(--third-text-color);
     margin-bottom: var(--fourth-margin-bottom);
 }
 
-.btn__container{
+.btn__container {
     display: flex;
     align-items: center;
     gap: var(--sixth-gap);
@@ -239,14 +237,14 @@ nav ul li a:hover {
     margin-top: var(--sixth-gap);
 }
 
-.banner__top__card{
+.banner__top__card {
     position: absolute;
     top: 28%;
     left: 60%;
     transform: translateX(-50% -50%);
 }
 
-.banner__bottom__card{
+.banner__bottom__card {
     position: absolute;
     bottom: 12%;
     left: 5%;
@@ -263,13 +261,13 @@ nav ul li a:hover {
     padding: var(--fifth-padding);
 }
 
-.banner__card__title{
+.banner__card__title {
     font-size: var(--fifth-font-size);
     font-weight: var(--second-font-weight);
     margin-bottom: var(--seventh-margin-bottom);
 }
 
-.banner__card__desc{
+.banner__card__desc {
     font-size: var(--seventh-font-size);
     font-weight: var(--fifth-font-weight);
     color: var(--second-text-color);
@@ -293,17 +291,18 @@ nav ul li a:hover {
     transform: translate(-50%, -50%) rotate(90deg);
 }
 
-.play__icon{
+.play__icon {
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: var(--sixth-font-size);
     gap: var(--sixth-gap);
 }
+
 /* ======== Header Section Ends Here ======== */
 
 /* ======== Change Your Habit Section Starts Here ======== */
-.change__your__habit__card__box{
+.change__your__habit__card__box {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     justify-content: space-between;
@@ -312,7 +311,7 @@ nav ul li a:hover {
     margin-top: var(--fourth-gap);
 }
 
-.change__your__habit__card{
+.change__your__habit__card {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -320,17 +319,49 @@ nav ul li a:hover {
     text-align: center;
     gap: var(--sixth-gap);
 }
-.change__your__habit__card__img{
+
+.change__your__habit__card__img {
     border: .1px solid var(--border-color);
     border-radius: 100%;
 }
-.change__your__habit__card__contents h3{
+
+.change__your__habit__card__contents h3 {
     margin-bottom: var(--seventh-margin-bottom);
 }
+
 /* ======== Change Your Habit Section Ends Here ======== */
 
-/* ======== Basic Section Starts Here ======== */
-/* ======== Basic Section Ends Here ======== */
+/* ========  Run an Extra Mile Easily Section Starts Here ======== */
+.run__an__extra__mile__easily {
+    padding: 1rem 1rem 1rem 3rem;
+    border-radius: 18px;
+    background: rgb(34, 34, 34);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.run__an__extra__mile__easily__contents {
+    width: 45%;
+}
+
+.run__an__easily__extra__mile__contents__title {
+    width: 70%;
+    text-align: start;
+    line-height: 100%;
+    margin-bottom: var(--fifth-margin-bottom);
+}
+
+.run__an__extra__mile__easily__img{
+    width: 50%;
+}
+.run__an__extra__mile__easily__img img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: var(--third-border-radius);
+}
+/* ========  Run an Extra Mile Easily Section Ends Here ======== */
 
 /* ======== Basic Section Starts Here ======== */
 /* ======== Basic Section Ends Here ======== */
