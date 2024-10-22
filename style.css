@@ -44,7 +44,7 @@
     --third-padding: .8rem 1.6rem;
     --fourth-padding: .6rem 1.4rem;
     --fifth-padding: .4rem 1.2rem;
-    --sixth-padding: 5px;
+    --sixth-padding: 1rem;
     /* ========= Margin =========; */
     --first-margin: 1.6rem 2.4rem;
     --second-margin: 1.2rem 2rem;
@@ -70,6 +70,7 @@
     --fifth-gap: 2rem;
     --sixth-gap: 1rem;
     --seventh-gap: .6rem;
+    --eighth-gap: .3rem;
 }
 
 body {
@@ -431,9 +432,9 @@ select {
 }
 
 option {
-    background-color: #333333; 
+    background-color: #333333;
     padding: 5px;
-  }
+}
 
 .form__item {
     display: flex;
@@ -447,15 +448,57 @@ option {
     border-radius: 5px;
     border: 1px solid var(--border-color);
 }
-.activity__factor{
+
+.activity__factor {
     width: 80%;
     margin-bottom: var(--sixth-margin-bottom);
 }
 
 /* ======== BMI Calculator Section Ends Here ======== */
 
-/* ======== Basic Section Starts Here ======== */
-/* ======== Basic Section Ends Here ======== */
+/* ======== Meet Our Team Section Starts Here ======== */
+/* .meet__our__team__card__box{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between;
+} */
+
+.meet__our__team__container{
+    margin-top: var(--fourth-margin-bottom);
+}
+.meet__our__team__card__box {
+    border-radius: 18px;
+    background: rgb(34, 34, 34);
+    padding: var(--sixth-padding);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--fifth-gap);
+}
+
+.meet__our__team__card{
+    position: relative;
+}
+
+.trainer__info{
+    position: absolute;
+    bottom: 0;
+    left: 5%;
+    transform: translateX(-50% -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: var(--sixth-font-size);
+    transition: var(--transition);
+}
+.meet__our__team__card img {
+    width: 100%;
+    object-fit: fill;
+    height: 260px;
+    border-radius: var(--third-border-radius);
+    filter: opacity(70%);
+}
+
+/* ======== Meet Our Team Section Ends Here ======== */
 
 /* ======== Basic Section Starts Here ======== */
 /* ======== Basic Section Ends Here ======== */
