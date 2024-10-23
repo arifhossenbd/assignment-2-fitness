@@ -783,152 +783,73 @@ nav {
 
 /* ======== Fitness and Blogs Section Starts Here ======== */
 .fitness__and__blogs{
-    margin: 0 10rem;
+    margin: 0 1rem;
 }
 .fitness__and__blogs__box {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: var(--gap-15);
-    margin-top: var(--gap-32);
-    align-items: center;
-    flex-wrap: wrap;
-    flex-grow: 1;
+    grid-template-columns: repeat(1, 1fr);
+    gap: var(--gap-26);
 }
 
 .fitness__and__blogs__card img {
-    width: 100%;
-    height: 20rem;
-    object-fit: fill;
-    border-radius: var(--second-border-radius);
-}
-
-.fitness__and__blogs__card {
-    display: flex;
-    height: fit-content;
-    flex-direction: column;
-    background: var(--third-bg-color);
-    border-radius: var(--second-border-radius);
-}
-
-.card__contents {
-    padding: var(--padding-16);
-    display: flex;
-    flex-direction: column;
+    height: 15rem;
 }
 
 .card__desc{
     font-size: var(--font-size-14);
-    font-weight: 300;
-    height: 6rem;
+    font-weight: 200;
 }
-
-.card__btn {
-    text-align: center;
-}
-
-.card__button {
-    width: 100%;
-    border-radius: var(--second-border-radius);
-}
-
 /* ======== Fitness and Blogs Section Starts Here ======== */
 
 /* ======== BMI Calculator Section Starts Here ======== */
 .bmi__calculator__section {
-    background: var(--third-bg-color);
-    padding: 3rem 10rem;
+    padding: 1rem;
 }
 
 .bmi__calculator {
-    width: 50%;
+    width: 100%;
     margin: auto;
-    padding: var(--gap-80) 0;
+    padding: var(--gap-15);
 }
 
 .bmi__calculator__contents {
-    display: flex;
+    flex-direction: column;
     gap: var(--gap-15);
-    justify-content: space-between;
 }
 
 .bmi__calculator__title {
     text-align: start;
-    margin-bottom: var(--gap-15);
+    margin-bottom: var(--gap-15) 1.5rem;
 }
 
 .bmi__calculator__chart {
-    width: 50%;
-}
-
-table {
-    width: max-content;
-    border-collapse: collapse;
-}
-
-th,
-td {
-    border: 1px solid var(--second-color);
-    padding: 10px;
-    color: var(--second-font-color);
-    font-size: var(--font-size-14);
-    font-weight: var(--font-weight-400);
-}
-
-th {
-    color: white;
-    font-size: var(--font-size-15);
-    font-weight: var(--font-weight-500);
-    text-align: start;
+    width: 100%;
 }
 
 .bmi__calculator__contents__title {
-    margin-bottom: var(--gap-32);
-    font-size: var(--font-size-28);
-    font-weight: var(--font-weight-900);
-    line-height: var(--line-height-120);
+    margin: var(--gap-26) 0;
+    font-size: var(--font-size-24);
+    font-weight: var(--font-weight-800);
+    text-align: start;
 }
-.bmi__calculator__contents__desc{
-    font-size: var(--font-size-14);
-    font-weight: var(--font-weight-400);
-    line-height: var(--line-height-22);
-    color: var(--second-font-color);
-}
+
 .bmi__calculator__form {
-    width: 50%;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    gap: var(--gap-32);
+    gap: var(--gap-26);
 }
 
-.form__item input,
-select {
-    border: none !important;
-    padding: 10px;
-    border-radius: 8px;
-    background: var(--second-color);
-}
-
-option {
-    background-color: #333333;
-    padding: 5px;
-}
-
-.form__item {
-    display: flex;
-    gap: var(--gap-7);
-    margin-bottom: var(--gap-15);
+.form__item input {
+    width: 100%;
 }
 
 .form__select {
-    width: 39%;
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid var(--border-color);
+    width: 100%;
 }
 
 .activity__factor {
-    width: 80%;
-    margin-bottom: var(--gap-26);
+    width: 100%;
+    margin-bottom: var(--gap-15);
 }
 
 /* ======== BMI Calculator Section Ends Here ======== */
