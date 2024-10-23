@@ -18,123 +18,99 @@
     /* ========= Background Color =========; */
     --first-bg-color: black;
     --second-bg-color: rgb(230, 83, 60);
-    --third-bg-color: rgba(255, 255, 255, 0.1);
-    /* ========= Text Color =========; */
-    --first-text-color: rgb(255, 255, 255);
-    --second-text-color: rgba(255, 255, 255, 0.5);
-    --third-text-color: rgb(230, 83, 60);
+    --third-bg-color: rgb(34, 34, 34);
+    /* ========= Font Color =========; */
+    --second-font-color: rgba(255, 255, 255, 0.5);
     /* ========= Font Size =========; */
-    --first-font-size: 4.8rem;
-    --second-font-size: 3.8rem;
-    --third-font-size: 3rem;
-    --fourth-font-size: 2rem;
-    --fifth-font-size: 1.6rem;
-    --sixth-font-size: 1rem;
-    --seventh-font-size: .8rem;
+    --font-size-48: 3rem;
+    --font-size-36: 2.6rem;
+    --font-size-32: 2rem;
+    --font-size-24: 1.5rem;
+    --font-size-28: 1.7rem;
+    --font-size-18: 1.1rem;
+    --font-size-15: 1rem;
+    --font-size-14: .9rem;
     /* ========= Font Weight =========; */
-    --first-font-weight: 800;
-    --second-font-weight: 700;
-    --third-font-weight: 600;
-    --fourth-font-weight: 500;
-    --fifth-font-weight: 400;
-    --sixth-font-weight: 300;
-    /* ========= Padding =========; */
-    --first-padding: 1.6rem 2.4rem;
-    --second-padding: 1rem 2rem;
-    --third-padding: .8rem 1.6rem;
-    --fourth-padding: .6rem 1.4rem;
-    --fifth-padding: .4rem 1.2rem;
-    --sixth-padding: 1rem;
-    /* ========= Margin =========; */
-    --first-margin: 1.6rem 2.4rem;
-    --second-margin: 1.2rem 2rem;
-    --third-margin: .8rem 1.6rem;
-    --fourth-margin: .6rem 1.4rem;
-    --fifth-margin: .4rem 1.2rem;
-    --first-margin-bottom: 5.6rem;
-    --second-margin-bottom: 4.6rem;
-    --third-margin-bottom: 3.6rem;
-    --fourth-margin-bottom: 2.6rem;
-    --fifth-margin-bottom: 1.6rem;
-    --sixth-margin-bottom: 1.5rem;
-    --seventh-margin-bottom: .7rem;
-    /* ========= Border Radius =========; */
+    --font-weight-900: 900;
+    --font-weight-800: 800;
+    --font-weight-700: 700;
+    --font-weight-600: 600;
+    --font-weight-500: 500;
+    --font-weight-400: 400;
+    --line-height-120: 120%;
+    --line-height-26: 1.6rem;
+    --line-height-22: 1.2rem;
+    --second-color: rgba(255, 255, 255, 0.1);
+    --first-border-color: rgb(255, 255, 255);
     --first-border-radius: 2.6rem;
-    --second-border-radius: .5rem;
-    --third-border-radius: 1rem;
-
-    --border-color: rgb(255, 255, 255);
-    --second-border-color: rgba(255, 255, 255, 0.1);
+    --second-border-radius: 1rem;
     --transition: all 0.3s linear;
-    --fourth-gap: 5rem;
-    --fifth-gap: 2rem;
-    --sixth-gap: 1rem;
-    --seventh-gap: .6rem;
-    --eighth-gap: .3rem;
+    --gap-80: 5rem;
+    --gap-32: 2rem;
+    --gap-26: 1.6rem;
+    --gap-15: .8rem;
+    --gap-7: .4rem;
+    --gap-5: .2rem;
+    --padding-16: 1rem;
+    --padding-8: .5rem;
+    --padding-7: .4rem;
+    --padding-5: .2rem;
 }
 
 body {
-    background-color: var(--first-bg-color);
-    color: var(--text-color);
+    background-color: black;
 }
 
 .primary__btn {
-    padding: var(--second-padding);
+    padding: .8rem 1.8rem;
     background-color: var(--second-bg-color);
-    color: var(--first-text-color);
     border-radius: var(--first-border-radius);
-    font-size: var(--sixth-font-size);
-    font-weight: var(--third-font-weight);
+    font-size: var(--font-size-18);
+    font-weight: var(--font-weight-600);
+    line-height: var(--line-height-26);
     transition: var(--transition);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     cursor: pointer;
 }
 
 .primary__btn:hover {
     background-color: transparent;
-    color: var(--first-text-color);
-    border: 1px solid var(--border-color);
+    border: 1px solid var(--first-border-color);
 }
 
 .transparent__btn {
     background-color: transparent;
-    color: var(--first-text-color);
-    border: 1px solid var(--border-color);
+    border: 1px solid var(--first-border-color);
 }
 
 
 .transparent__btn:hover {
     background-color: var(--second-bg-color);
-    color: var(--first-text-color);
     border: none;
 }
 
 .title {
-    font-size: var(--third-font-size);
-    font-weight: var(--second-font-weight);
+    font-size: var(--font-size-48);
+    font-weight: var(--font-weight-800);
+    line-height: var(--line-height-120);
     text-align: center;
 }
 
 .description {
-    font-size: var(--sixth-font-size);
-    font-weight: var(--fifth-font-weight);
-    color: var(--second-text-color);
-    margin-bottom: var(--fifth-margin-bottom);
+    font-size: var(--font-size-15);
+    font-weight: var(--font-weight-400);
+    line-height: var(--line-height-26);
+    color: var(--second-font-color);
+    padding: var(--gap-15) 0;
 }
 
 .section__description {
     text-align: center;
-    padding-top: var(--sixth-gap);
     width: 50%;
     margin: 0 auto;
 }
 
-.section__gap {
-    margin-top: var(--fourth-gap);
-}
-
 .section__margin {
-    margin: 0 10rem;
+    margin: var(--gap-80) 10rem;
 }
 
 /* ======== Basic CSS Ends Here ======== */
@@ -150,41 +126,39 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: var(--sixth-padding) 0;
+    padding: var(--padding-7) 0;
     margin-bottom: var(--margin-bottom);
 }
 
 nav ul {
     display: flex;
     align-items: center;
-    gap: var(--fifth-gap);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    gap: var(--gap-15);
+    border: 1px solid var(--second-color);
     border-radius: var(--first-border-radius);
-    font-size: var(--sixth-font-size);
-    font-weight: var(--fourth-font-weight);
-    transition: var(--transition);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    transition: var(--transition);
-    padding: var(--sixth-padding);
-    padding-right: 1rem;
+    padding: var(--padding-7);
+    padding-right: var(--padding-16);
+    line-height: var(--line-height-120);
 }
 
 nav ul li a:hover {
-    color: var(--second-text-color);
-    text-decoration: none;
+    color: var(--second-font-color);
 }
 
 .home {
     background-color: var(--second-bg-color);
-    color: var(--first-text-color);
-    padding: var(--fifth-padding);
+    padding: var(--padding-7) 1rem;
     border-radius: var(--first-border-radius);
 }
 
+.home:hover {
+    background-color: transparent;
+}
+
 .logo {
-    color: var(--third-text-color);
-    font-size: var(--fourth-font-size);
-    font-weight: var(--first-font-weight);
+    color: var(--second-bg-color);
+    font-size: var(--font-size-36);
+    font-weight: var(--font-weight-800);
     font-style: italic;
 }
 
@@ -192,7 +166,7 @@ nav ul li a:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: var(--fifth-gap);
+    gap: var(--gap-15);
 }
 
 .banner__contents {
@@ -200,10 +174,10 @@ nav ul li a:hover {
 }
 
 .banner__title {
-    font-size: var(--first-font-size);
+    font-size: 4.8rem;
     font-weight: 900;
     line-height: 100%;
-    margin-bottom: var(--fourth-margin-bottom);
+    margin-bottom: var(--gap-32);
 }
 
 .banner__shape {
@@ -217,14 +191,14 @@ nav ul li a:hover {
 .banner__desc {
     font-size: var(--third-font-size);
     font-weight: var(--second-font-weight);
-    color: var(--third-text-color);
-    margin-bottom: var(--fourth-margin-bottom);
+    color: var(--second-font-color);
 }
 
 .btn__container {
     display: flex;
     align-items: center;
-    gap: var(--sixth-gap);
+    gap: var(--gap-15);
+    margin-top: var(--gap-26);
 }
 
 .banner__img {
@@ -235,9 +209,8 @@ nav ul li a:hover {
     background-position: center;
     background-repeat: no-repeat;
     padding: 10rem 0;
-    color: white;
     position: relative;
-    margin-top: var(--sixth-gap);
+    margin-top: var(--gap-15);
 }
 
 .banner__top__card {
@@ -257,23 +230,23 @@ nav ul li a:hover {
 .banner__card {
     width: fit-content;
     box-sizing: border-box;
-    border: 0.70px solid rgba(255, 255, 255, 0.1);
+    border: 0.70px solid var(--second-color);
     border-radius: 9.07px;
     backdrop-filter: blur(5px);
     background: rgba(48, 48, 48, 0.54);
-    padding: var(--fifth-padding);
+    padding: var(--padding-8);
 }
 
 .banner__card__title {
-    font-size: var(--fifth-font-size);
-    font-weight: var(--second-font-weight);
-    margin-bottom: var(--seventh-margin-bottom);
+    font-size: var(--font-size-24);
+    font-weight: var(--font-weight-800);
+    margin-bottom: var(--gap-5);
 }
 
 .banner__card__desc {
-    font-size: var(--seventh-font-size);
-    font-weight: var(--fifth-font-weight);
-    color: var(--second-text-color);
+    font-size: var(--font-size-14);
+    font-weight: var(--font-weight-400);
+    color: var(--second-font-color);
 }
 
 .play__btn {
@@ -298,8 +271,7 @@ nav ul li a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: var(--sixth-font-size);
-    gap: var(--sixth-gap);
+    gap: var(--gap-15);
 }
 
 /* ======== Header Section Ends Here ======== */
@@ -307,11 +279,11 @@ nav ul li a:hover {
 /* ======== Change Your Habit Section Starts Here ======== */
 .change__your__habit__card__box {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
     justify-content: space-between;
-    gap: var(--sixth-gap);
+    gap: var(--gap-15);
     align-items: center;
-    margin-top: var(--fourth-gap);
+    margin-top: var(--gap-80);
 }
 
 .change__your__habit__card {
@@ -320,7 +292,7 @@ nav ul li a:hover {
     align-items: center;
     justify-content: center;
     text-align: center;
-    gap: var(--sixth-gap);
+    gap: var(--gap-15);
 }
 
 .change__your__habit__card__img {
@@ -329,7 +301,7 @@ nav ul li a:hover {
 }
 
 .change__your__habit__card__contents h3 {
-    margin-bottom: var(--seventh-margin-bottom);
+    margin-bottom: var(--gap-15);
 }
 
 /* ======== Change Your Habit Section Ends Here ======== */
@@ -338,7 +310,7 @@ nav ul li a:hover {
 .run__an__extra__mile__easily {
     padding: 1rem 1rem 1rem 3rem;
     border-radius: 18px;
-    background: rgb(34, 34, 34);
+    background: var(--third-bg-color);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -352,7 +324,12 @@ nav ul li a:hover {
     width: 70%;
     text-align: start;
     line-height: 100%;
-    margin-bottom: var(--fifth-margin-bottom);
+    margin-bottom: var(--gap-7);
+}
+
+.run__an__easily__extra__mile__contents__desc {
+    width: 100%;
+    padding: var(--gap-32) 0;
 }
 
 .run__an__extra__mile__easily__img {
@@ -363,27 +340,79 @@ nav ul li a:hover {
     width: 100%;
     height: auto;
     object-fit: cover;
-    border-radius: var(--third-border-radius);
+    border-radius: var(--second-border-radius);
 }
 
 /* ========  Run an Extra Mile Easily Section Ends Here ======== */
 
+/* ======== Fitness and Blogs Section Starts Here ======== */
+.fitness__and__blogs{
+    margin: 0 10rem;
+}
+.fitness__and__blogs__box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--gap-15);
+    margin-top: var(--gap-32);
+    align-items: center;
+    flex-wrap: wrap;
+    flex-grow: 1;
+}
+
+.fitness__and__blogs__card img {
+    width: 100%;
+    height: 20rem;
+    object-fit: fill;
+    border-radius: var(--second-border-radius);
+}
+
+.fitness__and__blogs__card {
+    display: flex;
+    height: fit-content;
+    flex-direction: column;
+    background: var(--third-bg-color);
+    border-radius: var(--second-border-radius);
+}
+
+.card__contents {
+    padding: var(--padding-16);
+    display: flex;
+    flex-direction: column;
+}
+
+.card__desc{
+    font-size: var(--font-size-14);
+    font-weight: 300;
+    height: 6rem;
+}
+
+.card__btn {
+    text-align: center;
+}
+
+.card__button {
+    width: 100%;
+    border-radius: var(--second-border-radius);
+}
+
+/* ======== Fitness and Blogs Section Starts Here ======== */
+
 /* ======== BMI Calculator Section Starts Here ======== */
 .bmi__calculator__section {
-    background: rgb(34, 34, 34);
+    background: var(--third-bg-color);
     padding: 3rem 10rem;
 }
 
 .bmi__calculator {
-    width: 70%;
+    width: 50%;
     margin: auto;
+    padding: var(--gap-80) 0;
 }
 
 .bmi__calculator__contents {
     display: flex;
-    gap: 2rem;
+    gap: var(--gap-15);
     justify-content: space-between;
-    margin: 0 auto;
 }
 
 .bmi__calculator__title {
@@ -401,26 +430,32 @@ table {
 
 th,
 td {
-    border: 1px solid var(--second-border-color);
+    border: 1px solid var(--second-color);
     padding: 10px;
-    color: var(--second-text-color);
-    font-weight: var(--sixth-font-weight);
+    color: var(--second-font-color);
+    font-size: var(--font-size-14);
+    font-weight: var(--font-weight-400);
 }
 
 th {
     color: white;
-    font-weight: var(--fourth-font-weight);
+    font-size: var(--font-size-15);
+    font-weight: var(--font-weight-500);
     text-align: start;
 }
 
 .bmi__calculator__contents__title {
-    margin-bottom: var(--fifth-margin-bottom);
-    font-size: var(--fifth-font-size);
-    font-weight: var(--second-font-weight);
+    margin-bottom: var(--gap-15);
+    font-size: var(--font-size-28);
+    font-weight: var(--font-weight-900);
+    line-height: var(--line-height-120);
 }
 
 .bmi__calculator__form {
     width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-32);
 }
 
 .form__item input,
@@ -428,7 +463,7 @@ select {
     border: none !important;
     padding: 10px;
     border-radius: 8px;
-    background: rgba(255, 255, 255, 0.1);
+    background: var(--second-color);
 }
 
 option {
@@ -438,8 +473,8 @@ option {
 
 .form__item {
     display: flex;
-    gap: var(--seventh-gap);
-    margin-bottom: var(--seventh-margin-bottom);
+    gap: var(--gap-7);
+    margin-bottom: var(--gap-15);
 }
 
 .form__select {
@@ -451,29 +486,24 @@ option {
 
 .activity__factor {
     width: 80%;
-    margin-bottom: var(--sixth-margin-bottom);
+    margin-bottom: var(--gap-32);
 }
 
 /* ======== BMI Calculator Section Ends Here ======== */
 
 /* ======== Meet Our Team Section Starts Here ======== */
-/* .meet__our__team__card__box{
+.meet__our__team__card__box {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-content: space-between;
-} */
-
-.meet__our__team__container {
-    margin-top: var(--fourth-margin-bottom);
+    gap: var(--gap-15);
+    border-radius: 18px;
+    background: var(--third-bg-color);
+    padding: var(--padding-16);
 }
 
-.meet__our__team__card__box {
-    border-radius: 18px;
-    background: rgb(34, 34, 34);
-    padding: var(--sixth-padding);
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: var(--fifth-gap);
+.meet__our__team__container {
+    margin-top: var(--gap-32);
 }
 
 .meet__our__team__card {
@@ -482,36 +512,43 @@ option {
 
 .trainer__info {
     position: absolute;
-    bottom: 0;
+    bottom: 5%;
     left: 5%;
     transform: translateX(-50% -50%);
     display: flex;
     flex-direction: column;
     justify-content: center;
-    font-size: var(--sixth-font-size);
+    font-size: var(--font-size-14);
+    font-weight: var(--font-weight-400);
     transition: var(--transition);
+}
+
+.trainer {
+    font-size: var(--font-size-18);
+    font-weight: var(--font-weight-900);
+    line-height: var(--line-height-120);
 }
 
 .meet__our__team__card img {
     width: 100%;
     object-fit: fill;
     height: 250px;
-    border-radius: var(--third-border-radius);
-    filter: opacity(70%);
+    border-radius: var(--second-border-radius);
+    filter: opacity(60%);
 }
 
 /* ======== Meet Our Team Section Ends Here ======== */
 
 /* ======== Footer Section Starts Here ======== */
 footer {
-    background: rgb(34, 34, 34);
-    padding: var(--fifth-gap) 10rem;
+    background: var(--third-bg-color);
+    padding: var(--gap-32) 10rem;
 }
 
 .footer__container {
     display: flex;
     justify-content: space-between;
-    gap: var(--fourth-gap);
+    gap: var(--gap-7);
 }
 
 .footer__contents-1 {
@@ -519,48 +556,59 @@ footer {
 }
 
 .footer__title {
-    font-size: var(--first-font-size);
-    font-weight: var(--first-font-weight);
-    margin-bottom: var(--fifth-margin-bottom);
+    font-size: 4rem;
+    font-weight: var(--font-weight-900);
+    margin-bottom: var(--gap-7);
     font-style: italic;
-    color: var(--third-text-color)
+    color: var(--second-bg-color)
+}
+
+.footer__desc {
+    font-size: var(--font-size-14);
+    font-weight: var(--font-weight-400);
+    color: var(--second-font-color);
+    line-height: var(--line-height-22);
 }
 
 .footer__subtitle {
-    font-size: var(--fourth-font-size);
-    font-weight: var(--second-font-weight);
-    margin-bottom: var(--sixth-margin-bottom);
+    font-size: var(--font-size-32);
+    font-weight: var(--font-weight-700);
+    line-height: var(--line-height-120);
+    margin-bottom: var(--gap-15);
 }
-.footer__links{
+
+.footer__links {
     display: flex;
     flex-direction: column;
-    gap: var(--sixth-gap);
-}
-.footer__links li, a {
-    color: var(--second-text-color);
-    font-weight: 200;
+    gap: var(--gap-7);
 }
 
-.footer__hr{
+.footer__link {
+    color: var(--second-font-color);
+}
+
+.footer__hr {
     width: 100%;
     height: 1px;
-    background: var(--second-text-color);
-    margin-top: var(--third-margin-bottom);
+    background: var(--second-font-color);
+    margin-top: var(--gap-32);
 }
 
-.footer__copyright{
-    margin-top: var(--sixth-margin-bottom);
-    color: rgba(255, 255, 255, 0.1);
-    font-size: var(--sixth-font-size);
-    font-weight: var(--second-font-weight);
+.footer__copyright {
+    margin-top: var(--gap-26);
+    color: var(--second-color);
+    font-size: var(--font-size-15);
+    font-weight: var(--font-weight-400);
+    line-height: var(--line-height-22);
 }
 
 .footer__copyright p {
     font-size: var(--sixth-font-size);
     font-weight: 200;
-    color: var(--second-text-color);
+    color: var(--second-font-color);
     text-align: center;
 }
+
 /* ======== Footer Section Ends Here ======== */
 
 /* ======== Basic Section Starts Here ======== */
