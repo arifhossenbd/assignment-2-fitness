@@ -777,6 +777,7 @@ nav {
 .run__an__extra__mile__easily__img img {
     width: 100%;
     padding: var(--padding-16) 0;
+    margin-top: var(--gap-15);
 }
 
 /* ========  Run an Extra Mile Easily Section Ends Here ======== */
@@ -803,6 +804,7 @@ nav {
 /* ======== BMI Calculator Section Starts Here ======== */
 .bmi__calculator__section {
     padding: 1rem;
+    padding-bottom: var(--gap-32);
 }
 
 .bmi__calculator {
@@ -856,120 +858,57 @@ nav {
 
 /* ======== Meet Our Team Section Starts Here ======== */
 .meet__our__team__card__box {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    justify-content: space-between;
-    gap: var(--gap-15);
-    border-radius: 18px;
-    background: var(--third-bg-color);
-    padding: var(--padding-16);
+    grid-template-columns: repeat(1, 1fr);
+    gap: var(--gap-26);
 }
-
-.meet__our__team__container {
-    margin-top: var(--gap-32);
-}
-
-.meet__our__team__card {
-    position: relative;
-}
-
-.trainer__info {
-    position: absolute;
-    bottom: 5%;
-    left: 5%;
-    transform: translateX(-50% -50%);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    font-size: var(--font-size-14);
-    font-weight: var(--font-weight-400);
-    transition: var(--transition);
-}
-
-.trainer {
-    font-size: var(--font-size-18);
-    font-weight: var(--font-weight-900);
-    line-height: var(--line-height-120);
-}
-
-.meet__our__team__card img {
-    width: 100%;
-    object-fit: fill;
-    height: 250px;
-    border-radius: var(--second-border-radius);
-    filter: opacity(60%);
-}
-
 /* ======== Meet Our Team Section Ends Here ======== */
 
 /* ======== Footer Section Starts Here ======== */
 footer {
-    background: var(--third-bg-color);
-    padding: var(--gap-32) 10rem;
+    padding: 1rem;
 }
 
 .footer__container {
-    display: flex;
-    justify-content: space-between;
-    gap: var(--gap-7);
+    flex-direction: column;
+    gap: var(--gap-26);
 }
 
 .footer__contents-1 {
-    width: 40%;
+    width: 100%;
 }
 
 .footer__title {
-    font-size: 4rem;
-    font-weight: var(--font-weight-900);
-    margin-bottom: var(--gap-7);
-    font-style: italic;
-    color: var(--second-bg-color)
+    font-size: 3rem;
+    font-weight: var(--font-weight-800);
 }
 
 .footer__desc {
-    font-size: var(--font-size-14);
-    font-weight: var(--font-weight-400);
-    color: var(--second-font-color);
-    line-height: var(--line-height-22);
+    font-size: var(--font-size-16);
+    font-weight: var(--font-weight-200);
+    line-height: var(--line-height-26);
+    margin-top: var(--gap-15);
 }
 
 .footer__subtitle {
-    font-size: var(--font-size-32);
-    font-weight: var(--font-weight-700);
-    line-height: var(--line-height-120);
-    margin-bottom: var(--gap-15);
+    font-size: var(--font-size-24);
 }
 
 .footer__links {
-    display: flex;
-    flex-direction: column;
-    gap: var(--gap-7);
-}
-
-.footer__link {
-    color: var(--second-font-color);
+    font-size: var(--font-size-16);
 }
 
 .footer__hr {
-    width: 100%;
-    height: 1px;
-    background: var(--second-font-color);
-    margin-top: var(--gap-32);
+    margin-top: var(--gap-26);
 }
 
 .footer__copyright {
     margin-top: var(--gap-26);
-    color: var(--second-color);
-    font-size: var(--font-size-15);
-    font-weight: var(--font-weight-400);
-    line-height: var(--line-height-22);
 }
 
 .footer__copyright p {
-    font-size: var(--sixth-font-size);
-    font-weight: 200;
-    color: var(--second-font-color);
-    text-align: center;
+    font-size: var(--font-size-14e);
+    font-weight: var(--font-weight-100);
+    line-height: var(--line-height-22);
 }
 }
 /* ======== Small Device Styles Ends Here ======== */
