@@ -361,7 +361,7 @@ nav ul li a:hover {
 .fitness__and__blogs__box {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: var(--gap-15);
+    gap: var(--gap-26);
     margin-top: var(--gap-32);
     align-items: center;
 }
