@@ -37,6 +37,8 @@
     --font-weight-600: 600;
     --font-weight-500: 500;
     --font-weight-400: 400;
+    --font-weight-200: 200;
+    --font-weight-100: 100;
     --line-height-120: 120%;
     --line-height-26: 1.6rem;
     --line-height-22: 1.2rem;
@@ -162,6 +164,12 @@ nav ul li a:hover {
     font-style: italic;
 }
 
+.hamburger {
+    display: none;
+    font-size: var(--font-size-18);
+    cursor: pointer;
+}
+
 .banner {
     display: flex;
     justify-content: space-between;
@@ -189,8 +197,8 @@ nav ul li a:hover {
 }
 
 .banner__desc {
-    font-size: var(--third-font-size);
-    font-weight: var(--second-font-weight);
+    font-size: var(--font-size-14);
+    font-weight: var(--font-weight-400);
     color: var(--second-font-color);
 }
 
@@ -417,6 +425,7 @@ nav ul li a:hover {
 
 .bmi__calculator__title {
     text-align: start;
+    margin-bottom: var(--gap-15);
 }
 
 .bmi__calculator__chart {
@@ -445,12 +454,17 @@ th {
 }
 
 .bmi__calculator__contents__title {
-    margin-bottom: var(--gap-15);
+    margin-bottom: var(--gap-32);
     font-size: var(--font-size-28);
     font-weight: var(--font-weight-900);
     line-height: var(--line-height-120);
 }
-
+.bmi__calculator__contents__desc{
+    font-size: var(--font-size-14);
+    font-weight: var(--font-weight-400);
+    line-height: var(--line-height-22);
+    color: var(--second-font-color);
+}
 .bmi__calculator__form {
     width: 50%;
     display: flex;
@@ -486,7 +500,7 @@ option {
 
 .activity__factor {
     width: 80%;
-    margin-bottom: var(--gap-32);
+    margin-bottom: var(--gap-26);
 }
 
 /* ======== BMI Calculator Section Ends Here ======== */
@@ -611,14 +625,455 @@ footer {
 
 /* ======== Footer Section Ends Here ======== */
 
-/* ======== Basic Section Starts Here ======== */
-/* ======== Basic Section Ends Here ======== */
+/* ======== Responsive Styles Starts Here ======== */
 
-/* ======== Basic Section Starts Here ======== */
-/* ======== Basic Section Ends Here ======== */
+/* ======== Small Device Styles Starts Here ======== */
+@media screen and (max-width: 576px) {
 
-/* ======== Basic Section Starts Here ======== */
-/* ======== Basic Section Ends Here ======== */
+.primary__btn {
+    padding: 0.4rem 0.8rem;
+    font-size: var(--font-size-14);
+    line-height: var(--line-height-22);
+}
 
-/* ======== Basic Section Starts Here ======== */
-/* ======== Basic Section Ends Here ======== */
+.title {
+    font-size: var(--font-size-48);
+    font-weight: var(--font-weight-800);
+    line-height: var(--line-height-120);
+}
+
+.description {
+    font-size: var(--font-size-15);
+    font-weight: var(--font-weight-400);
+    line-height: var(--line-height-26);
+    color: var(--second-font-color);
+    padding: var(--gap-15) 0;
+}
+
+.section__description {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.section__margin {
+    margin: 0;
+    padding: 0;
+}
+
+/* ======== Basic CSS Ends Here ======== */
+
+/* ======== Header Section Starts Here ======== */
+
+header{
+    margin: 0;
+    padding: 1rem 2rem;
+}
+
+nav ul {
+    display: none;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    color: var(--second-bg-color);
+    font-size: var(--font-size-36);
+    font-weight: var(--font-weight-800);
+    font-style: italic;
+}
+
+.hamburger{
+    display: block;
+}
+
+.banner {
+    flex-direction: column;
+    gap: var(--gap-5);
+    margin: 0;
+    padding: 0;
+}
+
+.banner__contents {
+    width: fit-content;
+}
+
+.banner__title {
+    font-size: 3rem;
+    margin: var(--gap-32) 0;
+}
+
+.banner__shape {
+    font-size: 6rem;
+    font-weight: var(--font-weight-400);
+    line-height: 40%;
+}
+
+.banner__desc {
+    font-size: var(--font-size-14);
+    font-weight: var(--font-weight-100);
+}
+
+.btn__container {
+    gap: var(--gap-7);
+    margin: var(--gap-7) 0;
+}
+
+.banner__img {
+    width: 80%;
+    height: 420px;
+    margin-top: var(--gap-32);
+}
+
+.banner__card {
+    width: max-content;
+}
+
+/* ======== Header Section Ends Here ======== */
+
+/* ======== Change Your Habit Section Starts Here ======== */
+.change__your__habit__card__box {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-between;
+    gap: var(--gap-15);
+    align-items: center;
+    margin-top: var(--gap-80);
+}
+
+.change__your__habit__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: var(--gap-15);
+}
+
+.change__your__habit__card__img {
+    border: .1px solid var(--border-color);
+    border-radius: 100%;
+}
+
+.change__your__habit__card__contents h3 {
+    margin-bottom: var(--gap-15);
+}
+
+/* ======== Change Your Habit Section Ends Here ======== */
+
+/* ========  Run an Extra Mile Easily Section Starts Here ======== */
+.run__an__extra__mile__easily {
+    padding: 1rem 1rem 1rem 3rem;
+    border-radius: 18px;
+    background: var(--third-bg-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.run__an__extra__mile__easily__contents {
+    width: 45%;
+}
+
+.run__an__easily__extra__mile__contents__title {
+    width: 70%;
+    text-align: start;
+    line-height: 100%;
+    margin-bottom: var(--gap-7);
+}
+
+.run__an__easily__extra__mile__contents__desc {
+    width: 100%;
+    padding: var(--gap-32) 0;
+}
+
+.run__an__extra__mile__easily__img {
+    width: 50%;
+}
+
+.run__an__extra__mile__easily__img img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: var(--second-border-radius);
+}
+
+/* ========  Run an Extra Mile Easily Section Ends Here ======== */
+
+/* ======== Fitness and Blogs Section Starts Here ======== */
+.fitness__and__blogs{
+    margin: 0 10rem;
+}
+.fitness__and__blogs__box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--gap-15);
+    margin-top: var(--gap-32);
+    align-items: center;
+    flex-wrap: wrap;
+    flex-grow: 1;
+}
+
+.fitness__and__blogs__card img {
+    width: 100%;
+    height: 20rem;
+    object-fit: fill;
+    border-radius: var(--second-border-radius);
+}
+
+.fitness__and__blogs__card {
+    display: flex;
+    height: fit-content;
+    flex-direction: column;
+    background: var(--third-bg-color);
+    border-radius: var(--second-border-radius);
+}
+
+.card__contents {
+    padding: var(--padding-16);
+    display: flex;
+    flex-direction: column;
+}
+
+.card__desc{
+    font-size: var(--font-size-14);
+    font-weight: 300;
+    height: 6rem;
+}
+
+.card__btn {
+    text-align: center;
+}
+
+.card__button {
+    width: 100%;
+    border-radius: var(--second-border-radius);
+}
+
+/* ======== Fitness and Blogs Section Starts Here ======== */
+
+/* ======== BMI Calculator Section Starts Here ======== */
+.bmi__calculator__section {
+    background: var(--third-bg-color);
+    padding: 3rem 10rem;
+}
+
+.bmi__calculator {
+    width: 50%;
+    margin: auto;
+    padding: var(--gap-80) 0;
+}
+
+.bmi__calculator__contents {
+    display: flex;
+    gap: var(--gap-15);
+    justify-content: space-between;
+}
+
+.bmi__calculator__title {
+    text-align: start;
+    margin-bottom: var(--gap-15);
+}
+
+.bmi__calculator__chart {
+    width: 50%;
+}
+
+table {
+    width: max-content;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px solid var(--second-color);
+    padding: 10px;
+    color: var(--second-font-color);
+    font-size: var(--font-size-14);
+    font-weight: var(--font-weight-400);
+}
+
+th {
+    color: white;
+    font-size: var(--font-size-15);
+    font-weight: var(--font-weight-500);
+    text-align: start;
+}
+
+.bmi__calculator__contents__title {
+    margin-bottom: var(--gap-32);
+    font-size: var(--font-size-28);
+    font-weight: var(--font-weight-900);
+    line-height: var(--line-height-120);
+}
+.bmi__calculator__contents__desc{
+    font-size: var(--font-size-14);
+    font-weight: var(--font-weight-400);
+    line-height: var(--line-height-22);
+    color: var(--second-font-color);
+}
+.bmi__calculator__form {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-32);
+}
+
+.form__item input,
+select {
+    border: none !important;
+    padding: 10px;
+    border-radius: 8px;
+    background: var(--second-color);
+}
+
+option {
+    background-color: #333333;
+    padding: 5px;
+}
+
+.form__item {
+    display: flex;
+    gap: var(--gap-7);
+    margin-bottom: var(--gap-15);
+}
+
+.form__select {
+    width: 39%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid var(--border-color);
+}
+
+.activity__factor {
+    width: 80%;
+    margin-bottom: var(--gap-26);
+}
+
+/* ======== BMI Calculator Section Ends Here ======== */
+
+/* ======== Meet Our Team Section Starts Here ======== */
+.meet__our__team__card__box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between;
+    gap: var(--gap-15);
+    border-radius: 18px;
+    background: var(--third-bg-color);
+    padding: var(--padding-16);
+}
+
+.meet__our__team__container {
+    margin-top: var(--gap-32);
+}
+
+.meet__our__team__card {
+    position: relative;
+}
+
+.trainer__info {
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    transform: translateX(-50% -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: var(--font-size-14);
+    font-weight: var(--font-weight-400);
+    transition: var(--transition);
+}
+
+.trainer {
+    font-size: var(--font-size-18);
+    font-weight: var(--font-weight-900);
+    line-height: var(--line-height-120);
+}
+
+.meet__our__team__card img {
+    width: 100%;
+    object-fit: fill;
+    height: 250px;
+    border-radius: var(--second-border-radius);
+    filter: opacity(60%);
+}
+
+/* ======== Meet Our Team Section Ends Here ======== */
+
+/* ======== Footer Section Starts Here ======== */
+footer {
+    background: var(--third-bg-color);
+    padding: var(--gap-32) 10rem;
+}
+
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+    gap: var(--gap-7);
+}
+
+.footer__contents-1 {
+    width: 40%;
+}
+
+.footer__title {
+    font-size: 4rem;
+    font-weight: var(--font-weight-900);
+    margin-bottom: var(--gap-7);
+    font-style: italic;
+    color: var(--second-bg-color)
+}
+
+.footer__desc {
+    font-size: var(--font-size-14);
+    font-weight: var(--font-weight-400);
+    color: var(--second-font-color);
+    line-height: var(--line-height-22);
+}
+
+.footer__subtitle {
+    font-size: var(--font-size-32);
+    font-weight: var(--font-weight-700);
+    line-height: var(--line-height-120);
+    margin-bottom: var(--gap-15);
+}
+
+.footer__links {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-7);
+}
+
+.footer__link {
+    color: var(--second-font-color);
+}
+
+.footer__hr {
+    width: 100%;
+    height: 1px;
+    background: var(--second-font-color);
+    margin-top: var(--gap-32);
+}
+
+.footer__copyright {
+    margin-top: var(--gap-26);
+    color: var(--second-color);
+    font-size: var(--font-size-15);
+    font-weight: var(--font-weight-400);
+    line-height: var(--line-height-22);
+}
+
+.footer__copyright p {
+    font-size: var(--sixth-font-size);
+    font-weight: 200;
+    color: var(--second-font-color);
+    text-align: center;
+}
+}
+/* ======== Small Device Styles Ends Here ======== */
+
+/* ======== Small Device Styles Starts Here ======== */
+/* ======== Small Device Styles Ends Here ======== */
+/* ======== Responsive Styles Ends Here ======== */
