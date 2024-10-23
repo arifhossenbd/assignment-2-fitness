@@ -543,6 +543,11 @@ option {
     line-height: var(--line-height-120);
 }
 
+.occupation{
+    padding: 0;
+    margin: 0;
+}
+
 .meet__our__team__card img {
     width: 100%;
     object-fit: fill;
