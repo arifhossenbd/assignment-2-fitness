@@ -655,10 +655,11 @@ footer {
 .section__description {
     margin-bottom: var(--gap-15);
     padding: 1rem 0;
+    width: 80%;
 }
 
 .section__margin {
-    margin: 0;
+    margin: 1rem;
     padding: 0;
 }
 
@@ -668,7 +669,7 @@ footer {
 
 header{
     margin: 0;
-    padding: 1rem 2rem;
+    padding: 1rem;
 }
 
 nav ul {
@@ -750,39 +751,32 @@ nav {
 
 /* ========  Run an Extra Mile Easily Section Starts Here ======== */
 .run__an__extra__mile__easily {
-    padding: 1rem 1rem 1rem 3rem;
-    border-radius: 18px;
-    background: var(--third-bg-color);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    padding: 0 2rem;
+    flex-direction: column;
+    align-items: baseline;
 }
 
 .run__an__extra__mile__easily__contents {
-    width: 45%;
+    width: 100%;
 }
 
 .run__an__easily__extra__mile__contents__title {
-    width: 70%;
-    text-align: start;
-    line-height: 100%;
+    width: 100%;
     margin-bottom: var(--gap-7);
 }
 
 .run__an__easily__extra__mile__contents__desc {
     width: 100%;
-    padding: var(--gap-32) 0;
+    padding: var(--gap-15) 0;
 }
 
 .run__an__extra__mile__easily__img {
-    width: 50%;
+    width: 100%;
 }
 
 .run__an__extra__mile__easily__img img {
     width: 100%;
-    height: auto;
-    object-fit: cover;
-    border-radius: var(--second-border-radius);
+    padding: var(--padding-16) 0;
 }
 
 /* ========  Run an Extra Mile Easily Section Ends Here ======== */
